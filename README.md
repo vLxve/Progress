@@ -5,6 +5,8 @@
 * [Mercy](https://dsc.gg/mercy-coll)
 * [framework](https://github.com/Mercy-Collective/mercy-framework)
 
+# Installation
+* Drag and drop into [essentials] > mercy-ui > nui > Apps
 
 # Preview
 
