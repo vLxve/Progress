@@ -1,11 +1,8 @@
 # Progress bar for Mercy Framework
 
-
-# Mercy Discord 
-[Mercy](https://dsc.gg/mercy-coll)
-
-# Framework
-[framework](https://github.com/Mercy-Collective/mercy-framework)
+# Mercy
+* [Mercy](https://dsc.gg/mercy-coll)
+* [framework](https://github.com/Mercy-Collective/mercy-framework)
 
 
 # Preview
