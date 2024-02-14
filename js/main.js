@@ -34,7 +34,6 @@ Progress.addNuiListener("Start", (Data) => {
 
             clearInterval(interval);
 
-            // Add a 1-second timeout before finishing
             setTimeout(() => {
                 $.post('https://mercy-ui/Progress/Done', JSON.stringify({}));
             }, 250);
@@ -48,22 +47,17 @@ Progress.addNuiListener("Start", (Data) => {
 });
 
 Progress.addNuiListener("Stop", () => {
-    // Hide the progress elements
     $("#progress-label, #progress-percentage, .progress-bar-container").hide();
 
-    // Clear the interval
     clearInterval(interval);
 
-    // Remove the 'filled' class from all items
     var items = $('.item');
     items.removeClass('filled');
 
-    // If a ProgressBox exists, stop its animation
     if (ProgressBox) {
         ProgressBox.stop();
     }
 
-    // Reset the progress bar and percentage text
     if (ProgressBox && ProgressBox.text) {
         ProgressBox.setText('');
         ProgressBox.set(0);
@@ -71,7 +65,6 @@ Progress.addNuiListener("Stop", () => {
 
     $('#progress-percentage').text('0%');
 
-    // Log a message indicating that the event listener has stopped
     console.log('Event listener "Stop" has been triggered and processed.');
 });
 
@@ -101,6 +94,5 @@ function updateBar(kne, duration) {
             }
         }, duration / kne);
     } else {
-        // Handle case when elements are not found
     }
 }
